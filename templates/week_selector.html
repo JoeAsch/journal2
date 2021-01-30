@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<div>
+    <section class="container-page">
+        <form method="POST">
+
+        <h2>Daily Sales</h2>
+
+        <div class="form-group">
+                <label for="date">Start of Week</label>
+                <input type="date" class="form-control" style="width: 130px;" name="date" id="date"/>
+            </div>
+            <p>build the endpoint in  app to call report by range</p>
+        <button class="btn btn-secondary" type="submit">Request</button>
+            </form>
+         </section>
+    </div>
+{% endblock %}

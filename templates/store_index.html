@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <h2>Stores</h2>
+        {%for store in stores %}
+        <h3><a href="/index/transaction_entry/{{store._id}}">{{store.location}} {{store.number}}</a></h3>
+
+            <hr>
+        {% endfor %}
+        <button class="btn btn-secondary" type="button">
+            <a style="color:white" href="/store_new">Create New</a>
+        </button>
+    </div>
+{% endblock %}

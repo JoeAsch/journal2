@@ -1,0 +1,11 @@
+#login-form {
+    margin-top: 25px;
+}
+.page-form {
+    max-width: 280px;
+}
+body {  background-color: #cfcfcf;
+}
+input[type="text"] {
+  width: 20px;
+}

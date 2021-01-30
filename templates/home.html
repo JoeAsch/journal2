@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Sales Journal</h1>
+        <p class="lead">Record sales, number of transactions, and number of units sold. Enter notes detailing what drove sales!</p>
+        <hr class="my-4"/>
+        <p>Just sign up with email and a password and start your journal.</p>
+        <a class="btn btn-primary btn-large" href="{{url_for('new_user')}}">Get Started</a>
+        <hr style="height: 4px" class="my-4"/>
+        <p>Already a registered user click "log in"</p>
+        <a class="btn btn-primary btn-large" href="{{url_for('log_in')}}">Go to log in</a>
+    </div>
+{% endblock %}

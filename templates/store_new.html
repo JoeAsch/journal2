@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container page">
+<section class="store-entry-form">
+        <form method="POST">
+
+            <div class="form-group">
+                <label for="store">Store Name</label>
+                <input type="text" class="form-control" style="width: 150px;" name="store" id="store"/>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Store Number</label>
+                <input type="text" class="form-control" style="width: 150px;" name="number" id="number"/>
+            </div>
+
+         <button type="submit" class="btn btn-primary">
+            Create New Store
+         </button>
+        </form>
+    </section>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <h2>Daily Sales</h2>
+        <div class="list-group">
+            {%for tran in trans %}
+            <div class="row mb-1 mt-1">
+
+                    <p class="col-sm-2 list-group-item">{{tran.tran_date.strftime('%Y-%m-%d')}}</p>
+                    <p class="col-sm-2 list-group-item">{{tran.sales}}</p>
+                    <p class="col-sm-2 list-group-item">{{tran.traffic}}</p>
+                    <p class="col-sm-2 list-group-item">{{tran.pieces}}</p>
+
+            </div>
+            {% endfor %}
+
+
+
+        </div>
+        <button class="btn btn-secondary"  type="button">
+            <a style="color:white" href="/store_index">Back</a>
+        </button>
+
+    </div>
+<h3 class="col-sm-2 list-group-item">{{trans|sum(attribute='sales' )}}</h3>
+{% endblock %}
